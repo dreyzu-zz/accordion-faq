@@ -25,15 +25,6 @@ function App() {
     },
   };
 
-  const womanAnimation = {
-    initial: {
-      y: 0,
-    },
-    float: {
-      y: -15,
-    },
-  };
-
   return (
     <div className="flex justify-center items-center relative h-screen w-screen bg-gradient-to-b from-soft-violet to-soft-blue">
       <div className="flex flex-col rounded-2xl bg-white w-full max-w-md shadow-2xl mt-48 mx-6 mb-32 md:mt-14 md:mx-12 md:mb-0 md:flex-row md:max-w-3xl">
@@ -67,15 +58,7 @@ function App() {
             <img
               alt="illustration of a woman shopping online mobile"
               src="images/illustration-woman-online-mobile.svg"
-              variants={womanAnimation}
-              animate="float"
               className="md:hidden -mt-28 -ml-5 z-10 self-center relative"
-              transition={{
-                ease: "easeInOut",
-                duration: 5,
-                repeat: Infinity,
-                repeatType: "reverse",
-              }}
             />
             <img
               alt="card's background"
